@@ -21,7 +21,7 @@ class Veicolo {
 }
 
 Personaggio harry;
-Veicolo Veicolo;
+Veicolo veicolo;
 
 void setup() {
   fullScreen(P3D);
@@ -29,18 +29,13 @@ void setup() {
   harry = new Personaggio("harry.obj", width*0.5, height*0.2);
   harry.shape.setFill(#000000);
 
-  Veicolo = new Veicolo("broom.obj", width*0.5, height*0.9);
+  veicolo = new Veicolo("broom.obj", width*0.5, height*0.9);
 }
 
 
 void draw() {
   background(#7AFF5D);
   lights();
-  // harry.disegna(width*0.5,height*0.2);
-  //Veicolo.disegna(width*0.5,height*0.9);
+  harry.disegna(width*0.5, height*0.2);
+  veicolo.disegna(width*0.5, height*0.9);
 }
-
-
-
-
-
